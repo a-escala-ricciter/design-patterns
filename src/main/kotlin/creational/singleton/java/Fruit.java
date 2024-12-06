@@ -1,6 +1,6 @@
 package creational.singleton.java;
 
-public class Fruit {
+public final class Fruit {
     private Fruit() {}
 
     private String color;
