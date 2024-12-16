@@ -1,19 +1,23 @@
-package org.example.creational.abstract_factory.factory
+package creational.abstract_factory.factory
 
-import org.example.creational.abstract_factory.chair.Chair
-import org.example.creational.abstract_factory.coffee_table.CoffeeTable
-import org.example.creational.abstract_factory.sofa.Sofa
+import creational.abstract_factory.chair.Chair
+import creational.abstract_factory.chair.ModernChair
+import creational.abstract_factory.coffee_table.CoffeeTable
+import creational.abstract_factory.coffee_table.ModernCoffeeTable
+import creational.abstract_factory.sofa.ModernSofa
+import creational.abstract_factory.sofa.Sofa
+import org.example.creational.abstract_factory.factory.FurnitureFactory
 
 class ModernFactory : FurnitureFactory {
     override fun createChair(): Chair {
-        TODO("Not yet implemented")
+        return ModernChair()
     }
 
     override fun createCoffeeTable(): CoffeeTable {
-        TODO("Not yet implemented")
+        return ModernCoffeeTable()
     }
 
     override fun createSofa(): Sofa {
-        TODO("Not yet implemented")
+        return ModernSofa()
     }
 }

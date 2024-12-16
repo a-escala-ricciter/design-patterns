@@ -1,4 +1,4 @@
-package org.example.creational.factory_method
+package creational.factory_method
 
 class Truck: Transport {
     override fun deliver() {

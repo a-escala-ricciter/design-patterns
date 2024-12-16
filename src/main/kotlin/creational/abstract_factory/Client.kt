@@ -1,13 +1,13 @@
 package org.example.creational.abstract_factory
 
 import org.example.creational.abstract_factory.Style.*
-import org.example.creational.abstract_factory.chair.Chair
-import org.example.creational.abstract_factory.coffee_table.CoffeeTable
-import org.example.creational.abstract_factory.factory.ArtDecoFactory
+import creational.abstract_factory.chair.Chair
+import creational.abstract_factory.coffee_table.CoffeeTable
+import creational.abstract_factory.factory.ArtDecoFactory
 import org.example.creational.abstract_factory.factory.FurnitureFactory
-import org.example.creational.abstract_factory.factory.ModernFactory
-import org.example.creational.abstract_factory.factory.VictorianFactory
-import org.example.creational.abstract_factory.sofa.Sofa
+import creational.abstract_factory.factory.ModernFactory
+import creational.abstract_factory.factory.VictorianFactory
+import creational.abstract_factory.sofa.Sofa
 
 class Client(
     private val furnitureFactory: FurnitureFactory,

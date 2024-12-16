@@ -1,4 +1,4 @@
-package org.example.creational.factory_method
+package creational.factory_method
 
 abstract class Creator {
     /**
@@ -10,14 +10,8 @@ abstract class Creator {
      */
     abstract fun createDelivery(): Transport
 
-    fun deliver(type: String) {
-        val deliver = when(type) {
-            "T" -> TruckCreator()
-            "S" -> ShipCreator()
-            else -> throw IllegalArgumentException("No valid argument \"type\" provided")
-        }
-
-        val delivery = deliver.createDelivery()
+    fun deliver(creator: Creator) {
+        val delivery = creator.createDelivery()
         delivery.deliver()
     }
 }

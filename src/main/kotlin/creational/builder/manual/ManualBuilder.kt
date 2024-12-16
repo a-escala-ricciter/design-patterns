@@ -9,19 +9,23 @@ class ManualBuilder: Builder {
     override fun reset(): Builder = apply { manual = Manual() }
 
     override fun seats(numberOfSeats: Int): Builder {
-        TODO("Not yet implemented")
+        // TODO
+        return apply {}
     }
 
     override fun engine(engine: Engine): Builder {
-        TODO("Not yet implemented")
+        // TODO
+        return apply {}
     }
 
     override fun tripComputer(hasTripComputer: Boolean): Builder {
-        TODO("Not yet implemented")
+        // TODO
+        return apply {}
     }
 
     override fun gps(hasGps: Boolean): Builder {
-        TODO("Not yet implemented")
+        // TODO
+        return apply {}
     }
 
     fun build(): Manual = manual
