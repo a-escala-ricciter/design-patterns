@@ -1,6 +1,6 @@
 package behavioral.observer
 
-// Concrete Subject
+// Concrete Subject/Publisher
 class WeatherData : WeatherPublisher {
     private val observers = mutableListOf<WeatherListener>()
     private var temperature: Float = 0.0f
